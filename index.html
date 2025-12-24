@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css".css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Photo Gallery</h1>
+            <p>A collection of beautiful images.</p>
+        </div>
+    </header>
+    <section class="album">
+        <h2>Cats Album 🐈</h2>
+        <div class="gallery">
+                <img src="cats/cat1.jpg" alt="Cat 1" onclick="openImage(this)">
+                <img src="cats/cat2.jpg" alt="Cat 2" onclick="openImage(this)">
+                <img src="cats/cat3.jpg" alt="Cat 3" onclick="openImage(this)">
+                <img src="cats/cat4.jpg" alt="Cat 4" onclick="openImage(this)">
+                <img src="cats/cat5.jpg" alt="Cat 5" onclick="openImage(this)">
+                <img src="cats/cat6.jpg" alt="Cat 6" onclick="openImage(this)">
+                <img src="cats/cat7.jpg" alt="Cat 7" onclick="openImage(this)">
+                <img src="cats/cat8.jpg" alt="Cat 8" onclick="openImage(this)">
+                <img src="cats/cat9.jpg" alt="Cat 9" onclick="openImage(this)">
+        </div>
+    </section>
+    <section class="album">
+        <h2>Nature Album 🍀</h2>
+        <div class="gallery">
+                <img src="nature/nature1.jpg" alt="Nature 1" onclick="openImage(this)">
+                <img src="nature/nature2.jpg" alt="Nature 2" onclick="openImage(this)">
+                <img src="nature/nature3.jpg" alt="Nature 3" onclick="openImage(this)">
+                <img src="nature/nature4.jpg" alt="Nature 4" onclick="openImage(this)">
+                <img src="nature/nature5.jpg" alt="Nature 5" onclick="openImage(this)">
+        </div>
+        <div id="imageModal" onclick="closeImage()">
+            <img id="modalImg" alt="Zoomed image">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
